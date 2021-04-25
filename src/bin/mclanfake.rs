@@ -4,6 +4,7 @@ use std::process;
 use clap::Clap;
 use std::time::Duration;
 
+/// Fakes discovery messages of LAN Minecraft servers.
 #[derive(Clap)]
 #[clap(version = "0.1.0", author = "Niklas Elsbrock <mail@nelsbrock.de>")]
 struct Opts {
