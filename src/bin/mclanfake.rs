@@ -6,7 +6,7 @@ use std::time::Duration;
 
 /// Fakes discovery messages of LAN Minecraft servers.
 #[derive(Clap)]
-#[clap(version = "0.1.0", author = "Niklas Elsbrock <mail@nelsbrock.de>")]
+#[clap(version = "0.2.0", author = "Niklas Elsbrock <mail@nelsbrock.de>")]
 struct Opts {
     /// "Message of the day" to use. This supports Minecraft formatting codes.
     motd: String,
