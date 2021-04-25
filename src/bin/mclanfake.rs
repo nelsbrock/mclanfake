@@ -15,7 +15,7 @@ struct Opts {
     ///
     /// This does not need to be a valid port or number. It supports Minecraft formatting codes.
     #[clap(short = 'p', long, default_value = "0")]
-    server_port: String,
+    advertise_port: String,
 
     /// The bind address to use for the UDP socket.
     #[clap(long, default_value = "0.0.0.0:34524")]
@@ -31,7 +31,7 @@ fn main() {
     match mclanfake::run(
         opts.udp_bind,
         &opts.motd,
-        &opts.server_port,
+        &opts.advertise_port,
         Duration::from_secs_f64(opts.interval),
     ) {
         Ok(_) => unreachable!(),
