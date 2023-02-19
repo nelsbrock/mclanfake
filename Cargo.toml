@@ -1,14 +1,11 @@
 [package]
 name = "mclanfake"
-version = "0.2.0"
+version = "0.3.0"
 authors = ["Niklas Elsbrock <mail@nelsbrock.de>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[profile.release]
-lto = "fat"
-codegen-units = 1
+edition = "2021"
+description = "Simple program for faking discovery messages of \"Open to LAN\" Minecraft servers"
 
 [dependencies]
-clap = "3.0.0-beta.2"
+clap = { version = "4.1.6", features = ["derive"] }
+format-bytes = "0.3.0"
+os_str_bytes = "6.3.0"
